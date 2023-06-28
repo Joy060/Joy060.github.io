@@ -1,0 +1,33 @@
+.title{
+    color: white;
+    display: i-block;
+    float: left;
+
+}
+
+#product-main ol{
+    line-height: 30px;
+}
+
+.pics{
+    padding-top: 1em;
+    width: 100%;
+    background-size: cover;
+}
+
+.col-sm-4{
+    padding: 1em;
+}
+
+button{
+    display: block;
+    width: 250px;
+    border: none;
+    margin: 2px;
+    background-color: pink;
+}
+
+.col-sm-8 p{
+    padding-top: 0.3em;
+    text-align: center;
+}
