@@ -1,0 +1,80 @@
+
+header{
+    width: 100%;
+    height: 25vh;
+    line-height: 25vh;
+    background-color: var(--textDefual);
+    color: var(--btnTheme);
+    position: relative;
+    display: flex;
+}
+
+header h1{
+    margin: 0 2em;
+}
+
+
+/* header .btn {
+    background-color: rosybrown;
+} */
+
+.wood{
+    background-color: rgba(236, 58, 58, 0.816);
+    color: rgb(255, 240, 250);
+    padding: 0.5em;
+    margin: 1em 0.5em;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 5vh;
+}
+
+#center{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+
+#center .container{
+    width: 80%;
+    display: flex;
+    justify-content:flex-end;
+    position: absolute;
+    top: 20vh;
+    /* background-color: rgba(165, 42, 42, 0.198); */
+}
+
+#center .container .wood{
+    width: 40px;
+    height: 150px;
+    text-align: center;
+    background-color: var(--footer);
+    margin: 0.5em;
+    display: inline;
+    box-shadow: 1px 1px 2px rgb(116, 78, 17);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--banner);
+}
+
+.wood:hover{
+    transform:scale(1.1);
+}
+
+.wood:hover{
+    transform:scale(1.1);
+}
+
+.wood:active{
+    transform:scale(0.9);
+}
+
+#center .container .wood p{
+    padding-top: 50px;
+}
+
+.ps{
+    color: #f0f8ff7f;
+    font-size: 9px;
+    position: absolute;
+    top: 65vh;
+}
