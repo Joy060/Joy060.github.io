@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+html,body,header,footer,aside,main,article,menu,nav,p,a,b,i,u,ul,li,ol,h1,h2,h3,h4,h5,h6,div,span,img,table,hr{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Noto Sans TC',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+p{
+    margin: 0.75em 0;
+}
+:root{
+    --btnTheme: #A1C6D9;
+    --textDefual: #888888;
+    --banner: #1D1E1F;
+    --contact: #292B2C;
+    --alpha: #00000088;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+*[class^=btn]{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    border-radius: 0.35em;
+    font-size: inherit;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #000000;
+    background-color: rgba(240, 248, 255, 0.609);
+    padding: 0.5em 1em;
+}
+
+*[class^=btn]:hover{
+    filter: brightness(1.2);
+}
+*[class^=btn]:active{
+    box-shadow: -2px -2px 2px black inset;
+}
+
+.grid-1{
+    width: calc(100% / 12 * 1);
+}
+.grid-2{
+    width: calc(100% / 12 * 2);
+}
+.grid-3{
+    width: calc(100% / 12 * 3);
+}
+.grid-4{
+    width: calc(100% / 12 * 4);
+}
+.grid-5{
+    width: calc(100% / 12 * 5);
+}
+.grid-6{
+    width: calc(100% / 12 * 6);
+}
+.grid-7{
+    width: calc(100% / 12 * 7);
+}
+.grid-8{
+    width: calc(100% / 12 * 8);
+}
+.grid-9{
+    width: calc(100% / 12 * 9);
+}
+.grid-10{
+    width: calc(100% / 12 * 10);
+}
+.grid-11{
+    width: calc(100% / 12 * 11);
+}
+.grid-12{
+    width: calc(100% / 12 * 12);
+}
+
+
+
+@media only screen and (min-width: 375px) {
+    .grid-s-1{
+        width: calc(100% / 12 * 1);
+    }
+    .grid-s-2{
+        width: calc(100% / 12 * 2);
+    }
+    .grid-s-3{
+        width: calc(100% / 12 * 3);
+    }
+    .grid-s-4{
+        width: calc(100% / 12 * 4);
+    }
+    .grid-s-5{
+        width: calc(100% / 12 * 5);
+    }
+    .grid-s-6{
+        width: calc(100% / 12 * 6);
+    }
+    .grid-s-7{
+        width: calc(100% / 12 * 7);
+    }
+    .grid-s-8{
+        width: calc(100% / 12 * 8);
+    }
+    .grid-s-9{
+        width: calc(100% / 12 * 9);
+    }
+    .grid-s-10{
+        width: calc(100% / 12 * 10);
+    }
+    .grid-s-11{
+        width: calc(100% / 12 * 11);
+    }
+    .grid-s-12{
+        width: calc(100% / 12 * 12);
+    }
+
+            /* 基本調整 */
+            #naver{
+                background-image: url(index.jpg);
+                background-size: cover;
+                background-position: bottom;
+                height: 80vh;
+            }
+            #nav1{
+                height: 20vh;
+                background-color: aqua;
+                padding-left:0.5em;
+            }
+            #nav2{
+                height: 20vh;
+                background-color:beige;
+                padding-left:0.5em;
+            }
+            #nav3{
+                height: 20vh;
+                background-color:rgb(255, 255, 78);
+                padding-left:0.5em;
+            }
+            #nav4{
+                height: 20vh;
+                background-color:rgb(99, 80, 245);
+                padding-left:0.5em;
+            }
+}
+@media only screen and (min-width: 768px) {
+    .grid-m-1{
+        width: calc(100% / 12 * 1);
+    }
+    .grid-m-2{
+        width: calc(100% / 12 * 2);
+    }
+    .grid-m-3{
+        width: calc(100% / 12 * 3);
+    }
+    .grid-m-4{
+        width: calc(100% / 12 * 4);
+    }
+    .grid-m-5{
+        width: calc(100% / 12 * 5);
+    }
+    .grid-m-6{
+        width: calc(100% / 12 * 6);
+    }
+    .grid-m-7{
+        width: calc(100% / 12 * 7);
+    }
+    .grid-m-8{
+        width: calc(100% / 12 * 8);
+    }
+    .grid-m-9{
+        width: calc(100% / 12 * 9);
+    }
+    .grid-m-10{
+        width: calc(100% / 12 * 10);
+    }
+    .grid-m-11{
+        width: calc(100% / 12 * 11);
+    }
+    .grid-m-12{
+        width: calc(100% / 12 * 12);
+    }
+
+            /* 調整 */
+            #naver{
+                height: 100vh;
+            }
+            #nav1{
+                height: 100vh;
+            }
+            #nav2{
+                height: 100vh;
+            }
+            #nav3{
+                height: 100vh;
+            }
+            #nav4{
+                height: 100vh;
+            }
+}
+@media only screen and (min-width: 1024px) {
+    .grid-l-1{
+        width: calc(100% / 12 * 1);
+    }
+    .grid-l-2{
+        width: calc(100% / 12 * 2);
+    }
+    .grid-l-3{
+        width: calc(100% / 12 * 3);
+    }
+    .grid-l-4{
+        width: calc(100% / 12 * 4);
+    }
+    .grid-l-5{
+        width: calc(100% / 12 * 5);
+    }
+    .grid-l-6{
+        width: calc(100% / 12 * 6);
+    }
+    .grid-l-7{
+        width: calc(100% / 12 * 7);
+    }
+    .grid-l-8{
+        width: calc(100% / 12 * 8);
+    }
+    .grid-l-9{
+        width: calc(100% / 12 * 9);
+    }
+    .grid-l-10{
+        width: calc(100% / 12 * 10);
+    }
+    .grid-l-11{
+        width: calc(100% / 12 * 11);
+    }
+    .grid-l-12{
+        width: calc(100% / 12 * 12);
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .grid-xl-1{
+        width: calc(100% / 12 * 1);
+    }
+    .grid-xl-2{
+        width: calc(100% / 12 * 2);
+    }
+    .grid-xl-3{
+        width: calc(100% / 12 * 3);
+    }
+    .grid-xl-4{
+        width: calc(100% / 12 * 4);
+    }
+    .grid-xl-5{
+        width: calc(100% / 12 * 5);
+    }
+    .grid-xl-6{
+        width: calc(100% / 12 * 6);
+    }
+    .grid-xl-7{
+        width: calc(100% / 12 * 7);
+    }
+    .grid-xl-8{
+        width: calc(100% / 12 * 8);
+    }
+    .grid-xl-9{
+        width: calc(100% / 12 * 9);
+    }
+    .grid-xl-10{
+        width: calc(100% / 12 * 10);
+    }
+    .grid-xl-11{
+        width: calc(100% / 12 * 11);
+    }
+    .grid-xl-12{
+        width: calc(100% / 12 * 12);
+    }
+}
