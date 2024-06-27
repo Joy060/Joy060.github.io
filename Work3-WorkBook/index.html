@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自我推薦頁_王佳玉_前端網頁工程師</title>
+    <title>王佳玉_前端網頁工程師_作品集</title>
     <style>
         *{
             padding: 0;
@@ -47,7 +47,7 @@
             width: 100%;
             line-height: 60px;
             display: inline-block;
-            background-color: rgb(255, 241, 160);
+            background-color: white;
             text-align: center;
             padding: 0 10px;
             box-shadow: 0 1px 1px rgba(128, 128, 128, 0.519) ;
@@ -59,7 +59,7 @@
         }
         
         .mini{
-            width: 200px;
+            width:70%;
             text-align: left;
             padding: 10px;
             border: 0.5px solid black;
@@ -105,10 +105,17 @@
             text-align: center;
         }
 
+        .inB{
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+        }
+
     </style>
 </head>
 
 <body>
+    <!-- TOP按鈕 -->
     <div class="top">
         <p><a href="#E">TOP</a></p>
     </div>
@@ -116,17 +123,20 @@
     <!-- 個人資料 -->
         <div class="lh" id="E">我是分隔線</div>
         <div class="box">
-            <div class="mini">
-                <img src="pic.jpg" alt="" style="border-radius: 50%;">
-                <h2 class="center">王佳玉<br>(28歲)</h2>
-                <h3 class="title center">轉職目標</h3>
-                <p class="center">
-                    獨立接案<br>
-                    人生自己作主<br>
-                    網頁設計工程師</p>
+            <div class="mini" style="display: flex;">
+                <img src="pic.jpg" alt="" style="  width: auto ;height: 200px; border-radius: 50%;">
+                <div class="inB" style="width: 50%; text-align: center;" >
+                    <h2>王佳玉(28歲)</h2>
+                    <p>臺灣,臺中</p>
+                    <h3 class="title">轉職目標</h3>
+                    <p style="padding: 25px 3px; text-align: left;"># 獨立接案<br> # 人生自己作主<br> # 網頁設計工程師</p>
+                </div>
             </div>
         </div>
         <div class="btnbox" >
+            <div class="btn">
+                <a href="#E"><h1>JOY</h1></a>
+            </div>
             <div class="btn">
                 <a href="#c"><p>UI作品</p></a>
             </div>
@@ -135,9 +145,6 @@
             </div>
             <div class="btn">
                 <a href="#a"><p>工作經歷</p></a>
-            </div>
-            <div class="btn">
-                <a href="#b"><p>學習歷程</p></a>
             </div>
         </div>
     
@@ -189,36 +196,29 @@
                     </a></h3>
             </div>
         </div>
-        <div class="lh">我是分隔線</div>
 
-    <!-- 工作經歷 -->
+    <!-- 工作經歷 學習歷程 -->
     <div class="lh" id="a">我是分隔線</div>
-        <div class="box" >
-            <div class="mini">
+    <div class="box" >
+        <div class="mini" style="display: flex;">
+            <div class="inB">
                 <h3 class="title center red">--工作經歷--</h3>
                 <p>105年 警察專校畢業上工</p>
                 <p>111年 空中大學畢業</p>
                 <p>112年 公職6年半離職</p>
                 <p>113年 空窗1年自學</p>
             </div>
-        </div>
-    
-    <!-- 學習歷程 -->
-    <div class="lh" id="b">我是分隔線</div>    
-        <div class="box" >
-            <div class="mini">
+            <div class="inB">
                 <h3 class="title center red">--學習歷程--</h3>
-                <p>111.10 初見html <br>
-                    摸索一段時間後，<br><br>
+                <p>111.10 初見html <br><br>
                     112.03 開始自學：<br>
                     考取PS證照 <br>
-                    Javascript、Vue.js<br>
-                    Bootstrap、Sass<br>
-                    RWD技術、<br>
-                    wordpress架網<br><br>
+                    Javascript、Vue.js、Bootstrap、Sass、RWD技術、wordpress架網<br><br>
                     113.04 學習Figma</p>
             </div>
         </div>
+    </div>
+
 
     <!-- 頁尾 -->
     <div class="footer">
