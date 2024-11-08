@@ -1,0 +1,55 @@
+
+
+/* 標籤區 */
+.tagArea{
+    text-align: right;
+    margin:10px 0 ;
+}
+
+.tag{
+    background-color: rgba(255, 255, 255, 0.871);
+    color: palevioletred;
+    display: inline-block;
+    padding: 0 2px;
+    margin: 0 2px;
+}
+
+.tag::before{
+    content: "#";
+}
+
+.card .tagArea{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* 單張卡片 */
+.card{
+    width: 250px;
+    /* background-color: rgb(72, 250, 161); */
+    background-color: rgba(250, 235, 215, 0.859);
+    padding:10px ;
+    display: inline-block;
+    text-align: left;
+    box-shadow : 1px 5px 2px rgb(186, 184, 184)  ;
+    margin: 20px 0 ;
+    position: relative;
+}
+
+
+
+img{
+    width: 250px;
+
+}
+
+.card p{
+    text-align: left;
+    margin: 5px 0;
+    margin-top: 5px;
+}
+
+#imgg{
+    width: 300p;
+}
