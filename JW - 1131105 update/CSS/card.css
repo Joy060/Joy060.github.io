@@ -1,0 +1,43 @@
+
+
+/* 標籤區 */
+.tagArea{
+    text-align: center;
+    margin:5px 0 ;
+}
+
+.tag{
+    background-color: rgba(255, 255, 255, 0.871);
+    color: palevioletred;
+    display: inline-block;
+}
+
+.tag::before{
+    content: "#";
+}
+
+/* 單張卡片 */
+.card{
+    width: 250px;
+    /* background-color: rgb(72, 250, 161); */
+    padding:10px ;
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+img{
+    width: 250px;
+
+}
+
+.card p{
+    text-align: left;
+    margin: 5px 0;
+    margin-top: 5px;
+}
+
+#imgg{
+    width: 300p;
+}
