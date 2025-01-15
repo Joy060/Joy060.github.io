@@ -131,7 +131,7 @@ img  { width: 100%;}
         border: 1px solid var(--secondary-color);
         border-radius: 10px;
         text-align: center;
-        margin: 5% auto;
+        margin: 10% auto;
     }
     
     /* about */
@@ -437,6 +437,7 @@ footer{
     }
 
     #nav5{
+        margin: 10% auto;
         width: 100%;
         animation: 
             fadeGradient 1s infinite,
