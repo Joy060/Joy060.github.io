@@ -1,0 +1,26 @@
+		PC		Mobile	
+header 	- logo
+	- nav------------------	(none)
+
+bentoPic
+
+ABOUT	-person
+	-Tips
+
+SKILL	-paper -TechStack/ -DesignStack
+	-apple
+
+WORKS	-bento_A
+	-bento_B
+	-chopstick
+
+CONTACT	-paper (form)
+	-cup_sent + words
+	
+
+FOOTER	-cup_get + words
+	-nav
+	-copyright
+
+
+
