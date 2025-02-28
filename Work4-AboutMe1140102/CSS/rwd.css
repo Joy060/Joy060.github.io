@@ -278,6 +278,13 @@ img  { width: 100%;}
         background-color: #ffffff;
     }
 
+    /*  container - ING */
+    #ING{
+        width: 50%;
+        margin: 20px 10% 100px auto;
+        padding: 8px;
+    }
+
 
 /* footer */
 
