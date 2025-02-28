@@ -1,0 +1,611 @@
+/* 基礎設定 */
+
+*{
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    list-style: none;
+    text-decoration: none; 
+}
+
+html  {
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+
+}
+img  { width: 100%;}
+
+
+
+/* 重複動作 */
+
+.active{
+    font-size: 26px;
+    transition: all 0.5s ease;
+}
+
+.shadow{
+    box-shadow: 4px 4px 2px rgb(0, 0, 0, 0.25);
+}
+
+
+@media screen and (min-width: 375px) {
+
+    /* 重複動作RWD */
+    .flex{
+        display: block;
+    }
+
+    
+    /* 背景區域 ---------------------*/
+
+    .bgContainer{
+        position: absolute;
+        top: 50px;
+        overflow: hidden;
+        width: 100%;
+        height: 2000px;
+    }
+
+    .bg{
+        height: 900px;
+
+        width: 2000px;
+        top: 300px;
+        left: -300px;
+
+        position: absolute;
+        background-color: var(--primary-color);
+        transform: rotate(-12deg);
+    }
+
+    .bg2{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        bottom: 0px;
+        background-color: var(--primary-color);
+    }
+
+    /* 導覽列header ---------------------*/
+    .headerContainer{
+        background-color: var(--third-color);
+    }
+
+    header{
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        
+        text-align: center;
+        position: fixed;
+        z-index: 5;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    /* header -logo */
+    #logo{
+        font-size: 48px;
+        font-weight: bold;
+        color: var(--logo-color);
+        -webkit-text-stroke: 1.5px var(--logo-stroke-color);
+        height: 100px;
+    }
+    
+    /* header -nav */
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav >a{
+        display: inline-block; /* 使用行內塊 */
+        width: 100%;
+        line-height: 3; /* 與文字高度相等 */
+        color: var(--secondary-color);
+
+    }
+    
+
+    #nav5{
+        width: 50%;
+        padding: 10px 0;
+        background-color: var(--third-color);
+        filter: brightness(1.1);
+        border: 1px solid var(--secondary-color);
+        border-radius: 10px;
+        text-align: center;
+        margin: 10% auto;
+    }
+    
+    /* 主內容容器 */
+    .container{
+        width: 95%;
+        padding-top:100px ;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+    /* container - about */
+    #about{
+        width: 95%;
+        margin: 20px auto 100px auto;
+        padding: 8px;
+
+        display: flex;
+        background-image: url(../img/bento.jpg);
+        filter: brightness(1.1);
+        background-size: cover;
+    }   
+
+    .tips{
+        width: 120px;
+        height: 80px;
+        margin: 8px 8px 8px 0;
+        line-height: 80px;
+
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--word-about-color);
+        text-align: center;
+        border: 0.25px solid black;
+        filter: brightness(1.1);
+        background-image: url(../img/bento.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .tips-4{
+        height: 110px;
+        line-height: 16px;
+        margin-bottom: 0;   
+    }
+
+    #person{
+        width: 100%;
+        height: 375px;
+
+        border: 0.25px solid black;
+        background-size: cover;
+        background-position: top;
+        overflow: hidden;
+        background-image: url(../img/about.jpg);
+    }
+
+        
+    /*  container - skill */
+    #skill{
+        margin-bottom: 150px;
+        padding-top: 30px;
+        width: 100%;
+        height: 610px;
+    }
+
+    .left{
+        margin-left: 10%;
+    }
+
+    .right{
+        float: right;
+        margin-right: 10%;
+    }
+
+    .right > .paper{
+        margin: 30px 0;
+    }
+
+    .paper{
+        width: 250px;
+        height: 280px;
+        padding: 5px;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+
+        text-align: center;
+        background-color: #ffffff;
+
+    }
+
+    .paper > h2{ margin: 10% 0;}
+
+    .paper >p{
+        margin: 15px;
+    }
+
+    /*  container - work */
+
+    #works{
+        padding-top: 20px;
+        margin-bottom: 150px;
+        padding: 30px 10%;
+    }
+    
+    .card{
+        margin: 20px auto;
+        padding: 30px 0;
+
+        right: 0;
+        transition: all 0.3s linear;
+    }
+
+    .imgInCard{
+        width: 100%;
+        height: 255px;
+        border-radius: 140px;
+        
+        background-image: url(../img/野餐墊.jpg);
+        background-size: cover;
+        overflow: hidden;
+        border: 12px solid var(--secondary-color);
+    }
+
+    .title{
+        font-size: larger;
+    }
+
+    .tagDiv{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag{
+        padding: 10px 15px;
+        margin: 5px 10px 5px 0;
+        background-color: #ffffff;
+    }
+    
+    .detail{
+        margin-top: 20px;  
+    }
+
+    /*  container - ING */
+    #ING{
+        width: 95%;
+        margin: 20px auto 100px auto;
+        padding: 8px;
+    }
+
+
+/* footer ---------------------*/
+
+footer{
+    height: 450px;
+    margin: 40px 5% 0 5% ;
+    overflow: hidden;
+    align-items:end;
+    font-size: 22px;
+}
+
+.footer-L{
+    width: 100%;
+    margin-top: 13%;
+    color: var(--third-color)
+}
+.footer-R{
+    width: 100%;
+    text-align: center;
+    margin-top: 80%;
+    color: var(--primary-color);
+    
+}
+
+/* bento 背景縮圖*/
+
+.cho{ 
+    width: 300px;
+    height: 8px;
+
+    background-color:#806139 ;
+    position: absolute;
+    border-radius: 3px;
+
+}
+
+.cho1{
+    transform: rotate(37deg);
+    right: 15%;
+    top:207px;
+}
+.cho2{
+    transform: rotate(28deg);
+    right: 2%;
+    top:195px;
+}
+
+.bentoBG{
+    left: 5%;
+    width: 300px;
+    height: 200px;
+    
+    transform: rotate(-12deg);
+    background-color: var(--third-color);
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 760px) {}
+@media screen and (min-width: 900px) {
+
+    /* 重複動作RWD */
+    .flex{
+        display: flex;
+    }
+    
+
+    /* 背景區域 ---------------------*/
+    .bg{
+        height: 1400px;
+    }
+
+    .bg2{
+        height: 550px;
+    }
+    
+
+    /* 導覽列header ---------------------*/
+
+    .headerContainer{
+        background-color: #00000000;
+    }
+
+    header{
+        width: 20%;
+        
+        text-align: left;
+        margin-left: 8%;
+        top: 35px;
+        background-color: transparent;
+
+    }
+
+    .hidden{
+        display: block !important ;
+        width: 100%;
+        line-height: 3;
+
+    }
+    
+    /* header -logo */
+    #logo{
+        margin-bottom: 10px;
+    }
+    /* header -nav */
+
+    nav {
+        display: block;
+
+    }
+
+    nav > a:hover {
+        transition: all 0.3s linear;
+        z-index: 3;
+    }
+    
+    nav a:hover::before{ 
+        content: '';
+        width: 50px;
+        height: 50px;
+        background-color: var(--logo-color);
+        opacity: 0.5;
+        position: absolute;
+        top: 50%; /* 垂直居中 */
+        left: 30%; /* 水平居中 */
+        transform: translate(-100%,-50%) rotate(45deg); 
+        z-index: -1;
+    }
+    
+    nav a:hover::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1; /* 位於最底層 */
+    }
+
+    #nav5{
+        width: 100%;
+
+        animation: 
+        fadeGradient 1s infinite,
+        positionX 3s infinite; /* 動畫持續 5 秒，無限循環 */
+    }
+
+    @keyframes positionX{
+        0%{ transform: translateX(0%);}
+        50%{ transform: translateX(3%);}
+        100%{ transform: translateX(0%);}
+    }
+    
+
+    /* 主內容容器 */
+    .container{
+        width: 100%;
+        padding-top:0; 
+        margin-top : 100px;
+
+    }
+    
+    
+    /* container - about */
+    #about{
+        width: 50%;
+        margin: 0px -20px 120px -20px;
+        margin-left: 40%;
+        padding: 16px 16px 0 0;
+    }
+
+    .tips{
+        width: 150px;
+        height: 103px;
+        margin: 16px;
+        line-height: 103px;
+    }
+
+    .tips-4{
+        height: 143px;
+        line-height: 25px;
+    }
+
+    #person{
+        width: 500px;
+        height: 500px;
+    }
+
+
+    /*  container - skill */
+    #skill{
+    margin-bottom: 550px;
+    padding-top: 30px;
+    display: flex;
+    }
+
+    .left{
+        width: 65%;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    
+    .left > .paper{
+        float: right;    
+        margin-top: 50px;
+    }
+    .right{
+        width: 35%;
+        margin-right: 0%;
+
+    }
+    
+    .right > .paper{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .paper{
+        width: 300px;
+        height: 450px;
+        padding: 10px;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.1s ease;
+    }
+    
+    .paper > h2{ margin: 25% 0;}
+    
+    .paper >p{
+        margin: 25px;
+    }
+    
+    /* container - work */
+
+    .blank{
+        display: block;
+        width: 100%;
+        height: 60%;
+        background-color: var(--third-color)
+    }
+
+    
+    .card{
+        margin-left: 47%;
+        padding: 30px 10%;
+    }
+
+    .imgInCard{
+        width: 435px;
+        height: 300px;
+        border-radius: 147px;
+
+        margin: 0 auto;
+    }
+
+    .detail{
+        width: 300px;
+        position: relative;
+        left: -280px;
+        top: -116px;
+        animation: detailFloat 10s infinite linear;
+    }
+
+    @keyframes detailFloat{
+        0%{transform: translate(3% ,0%);}
+       20%{transform: translate(-5% ,-10%);}
+       40%{transform: translate(2% ,3%);}
+       75%{transform: translate(-5% , 7%);}
+       100%{transform: translate(2% , 0);}
+   }
+
+    /*  container - ING */
+    #ING{
+        width: 50%;
+        margin: 20px 10% 100px auto;
+        padding: 8px;
+    }
+
+
+/* footer ---------------------*/
+
+footer{
+    height: 400px;
+    margin: 0 0 0 8%;
+    font-size: 16px;
+    display: flex;
+    padding:70px 0px;
+}
+
+.footer-L{
+    width: 45%;
+}
+.footer-R{
+    width: 55%;
+    text-align: left;
+    margin-top: 0;
+}
+
+/* bento 背景縮圖*/
+
+.cho{ 
+    width: 500px;
+    height: 12px;
+
+}
+
+.cho1{
+    transform: rotate(37deg);
+    right: 24%;
+    top:160px;
+}
+.cho2{
+    transform: rotate(28deg);
+    right: 14%;
+    top:180px;
+}
+
+.bentoBG{
+    left: 35%;
+    width: 500px;
+    height: 300px;
+}
+
+}
+@media screen and (min-width: 1200px) {}
